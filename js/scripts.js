@@ -7,7 +7,14 @@ var Musician = {
   }
 }
 
+var Band = {
+  initialize: function(bandName, bandGenre, bandMembers){
+    this.bandName = bandName;
+    this.bandGenre = bandGenre;
+    this.bandMembers = [];
 
+  }
+}
 
-// var newMusician = Object.create(Musician);
-// newMusician.initialize(member, instrument);
+// var sexPistols = Object.create(Band);
+// sexPistols.initialize("The Sex Pistols", "Punk Rock",["John Lydon", "Sid Vicious"]);
