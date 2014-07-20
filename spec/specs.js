@@ -10,11 +10,11 @@ describe("Musician", function() {
 });
 describe("Band", function() {
   describe("initialize", function() {
-    it("build an band object containing musician values", function() {
+    it("build an band object containing core band values(name/genre)", function() {
       var newBand = Object.create(Band);
-      var newMusician = Object.create(Musician);
+      // var newMusician = Object.create(Musician);
 
-      newBand.initialize("The Sex Pistols", "Punk Rock", ["Sid Vicious","John Lydon"]);
+      newBand.initialize("The Sex Pistols", "Punk Rock");
       newBand.bandName.should.equal("The Sex Pistols");
       newBand.bandGenre.should.equal("Punk Rock");
       newBand.bandMembers.should.eql([])
@@ -30,4 +30,6 @@ describe("Band", function() {
 
     });
   });
+
+
 });
