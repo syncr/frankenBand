@@ -1,0 +1,86 @@
+
+body{
+  background:#790894; 
+  font-family: 'Signika', sans-serif;}
+
+
+body::after {
+  content: "";
+  background: url('../images/concert.jpg');
+  opacity: 0.5;
+  top: -100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.jumbotron {
+  background: #6970a3;
+  color:#eee;
+}
+
+.jumbotron h1 {
+  font-size: 144px;
+}
+
+.jumbotron img {
+  height:150px;
+  width:150px;
+   -webkit-filter: invert(100%);  
+}
+
+#result {
+  visibility: hidden;
+}
+
+.btn {
+  margin:0;
+  width:100%;
+  background: #a4ffc7;
+  border:#a4e5ff;
+  border-radius: 0;
+  color:#333;
+}
+
+select {
+  width: 80%;
+}
+
+.bandContainer {
+  height:200px;
+  background:beige;
+  visibility:hidden;
+/*  margin:10px 0 20px 0;
+*/}
+
+.noPadnoMargin {
+  padding:0;
+  margin:0;
+}
+
+.bandOne, .bandTwo {
+  background: rgba(255,255,255,.3);
+  border: 1px solid #ccc;
+}
+.bandOne{
+  padding:10px 0 30px 20px;
+
+}
+.bandTwo{
+  padding: 10px 20px 30px 0;
+
+
+}
+
+.resultLabel {
+  position:relative;
+  top:-10px;
+  background: rgba(0,0,0,.3);  
+  padding:10px 0 30px 0;
+  color:#eee;
+  text-align: center;
+  border: 10px solid #6970a3;
+
+}

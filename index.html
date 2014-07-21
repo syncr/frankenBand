@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Signika:400,700,600' rel='stylesheet' type='text/css'>
+  
+  <script src="js/jquery-1.11.1.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <title>FrankenBand</title>
+</head>
+<body>
+  <div class='jumbotron row'>
+    <h1 class='col-sm-offset-1'>FrankenBand</h1>
+    <img class='pull-right' src="images/icon_23943.png">
+  </div>
+
+  <div class='container col-sm-10 col-sm-offset-1'>
+    <section class='dropDowns col-sm-12 row form-group'>
+      <form id='bandSelector'> 
+        <div class='bandOne col-sm-4 noPadnoMargin'>
+          <h3>Band Numero Uno!</h3>
+          <select name="bandSelect1" class='input-lg' id='bandSelect1' required>
+            <option>---</option>
+            <option value="beatles">The Beatles</option>
+            <option value="sexPistols">The Sex Pistols</option>
+            <option value="queen">Queen</option>
+          </select>
+        </div>
+        <div class='resultLabel col-sm-4 noPadnoMargin'>
+          <h3>Create the monster band!</h3>
+          <button type="submit" class="btn btn-primary input-lg ">Do it!</button>
+        </div>
+        <div class='bandTwo col-sm-4 noPadnoMargin'>
+          <div class='pull-right'>
+            <h3>Band Numero Dos!</h3>
+             <select name="bandSelect2" class='input-lg pull-right' id='bandSelect2' required>
+              <option>---</option>
+              <option value="beatles">The Beatles</option>
+              <option value="sexPistols">The Sex Pistols</option>
+              <option value="queen">Queen</option>
+            </select>
+          </div>
+        </div>
+      </form>
+    </section> 
+    <section class='row col-sm-12 resultGroup'>
+      <div class='col-sm-4 bandContainer' id='band1Container'>
+        
+      </div>
+      
+      <div class='col-sm-4 bandContainer' id='result'>
+        
+      </div>
+
+      <div class='col-sm-4 bandContainer' id='band2Container'>
+        
+      </div>
+
+
+
+        <div id='result' class='form-group row'>
+          <p>Your total cost is <span id='totalCost'></span> bars of latinum.</p>
+        </div>
+
+    </form>
+  </div>
+</body>
+</html>
