@@ -26,7 +26,9 @@ body::after {
 }
 
 .jumbotron img {
-  height:150px;
+  position:relative;
+  top: 40px;
+  height:100px;
   width:150px;
    -webkit-filter: invert(100%);  
 }
@@ -51,7 +53,7 @@ select {
 .bandContainer {
   height:200px;
   background:beige;
-  visibility:hidden;
+  /*visibility:hidden;*/
 /*  margin:10px 0 20px 0;
 */}
 
